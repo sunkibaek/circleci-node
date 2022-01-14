@@ -11,9 +11,11 @@ executors:
     docker:
       - image: circleci/node:14.17.0
 
-jobs:
+workflows:
   hello:
-    executor: node
-    steps:
-      - checkout
-      - yarn_hello
+    jobs:
+      perform_hello:
+        executor: node
+        steps:
+          - checkout
+          - yarn_hello
