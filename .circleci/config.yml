@@ -1,0 +1,19 @@
+version: 2.1
+
+commands:
+  yarn_hello:
+    steps:
+      - run: |
+          yarn hello
+
+executors:
+  node:
+    docker:
+      - image: circleci/node:14.17.0
+
+jobs:
+  hello:
+    executor: node
+    steps:
+      - checkout
+      - yarn_hello
