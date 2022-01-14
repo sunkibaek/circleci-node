@@ -1,0 +1,7 @@
+{
+  "name": "circleci-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Sunki Baek <sunki.baek@justeattakeaway.com>",
+  "license": "MIT"
+}
